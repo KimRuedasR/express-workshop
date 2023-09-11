@@ -4,17 +4,28 @@
   "description": "An API REST using express.js",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KimRuedasR/express-workshop.git"
+  },
   "keywords": [
-    "api",
-    "rest",
+    "nodejs",
     "express",
-    "nodejs"
+    "rest",
+    "api",
+    "mysql"
   ],
   "author": "KimRR",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KimRuedasR/express-workshop.git/issues"
+  },
+  "homepage": "https://github.com/KimRuedasR/express-workshop#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1"
   }
 }
