@@ -66,7 +66,7 @@ pokemon.get('/', async(req, res, next) => {
 });
 
 pokemon.get('/:id([0-9]{1,3})', async(req, res, next)=> { 
-    const id = req.params.id - 1;
+    const id = req.params.id;
     if (id >= 1 && id <= 800) {
         const pkmn = await db.query("SELECT * FROM pokemon WHERE pok_id="+id+";");
         return res.status(200).json({code: 200, message: pkmn});
