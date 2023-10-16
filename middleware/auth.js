@@ -9,4 +9,4 @@ module.exports = (req, res, next) => {
   } catch (error) {
     res.status(401).json({ code: 401, message: "No tienes permiso :(" });
   }
-};
+}; //
